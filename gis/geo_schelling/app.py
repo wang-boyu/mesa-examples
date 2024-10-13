@@ -1,7 +1,7 @@
 import solara
 from mesa.visualization import Slider, SolaraViz, make_plot_measure
 from mesa_geo.visualization import make_geospace_leaflet
-from model import GeoSchelling
+from .model import GeoSchelling
 
 
 def make_plot_happiness(model):

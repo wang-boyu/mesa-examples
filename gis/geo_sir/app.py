@@ -1,5 +1,5 @@
-from geo_sir.agents import PersonAgent
-from geo_sir.model import GeoSir
+from .geo_sir.agents import PersonAgent
+from .geo_sir.model import GeoSir
 from mesa.visualization import Slider, SolaraViz, make_plot_measure
 from mesa_geo.visualization import make_geospace_leaflet
 

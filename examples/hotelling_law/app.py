@@ -2,8 +2,8 @@ import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 import numpy as np
 import solara
-from hotelling_law.agents import ConsumerAgent, StoreAgent
-from hotelling_law.model import HotellingModel
+from .hotelling_law.agents import ConsumerAgent, StoreAgent
+from .hotelling_law.model import HotellingModel
 from matplotlib.figure import Figure
 from mesa.visualization import SolaraViz, make_plot_measure
 

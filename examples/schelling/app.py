@@ -5,7 +5,7 @@ from mesa.visualization import (
     make_plot_measure,
     make_space_matplotlib,
 )
-from model import Schelling
+from .model import Schelling
 
 
 def get_happy_agents(model):
@@ -40,4 +40,6 @@ page = SolaraViz(
     ],
     model_params=model_params,
 )
-page  # noqa
+
+if __name__ == "__main__":
+    page  # noqa
