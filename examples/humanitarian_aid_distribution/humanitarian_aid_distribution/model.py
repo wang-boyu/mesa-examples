@@ -25,7 +25,7 @@ class HumanitarianModel(mesa.Model):
         num_trucks=3,
         width=20,
         height=20,
-        seed=None,
+        rng=None,
         critical_days_threshold=5,
     ):
         """
@@ -36,10 +36,10 @@ class HumanitarianModel(mesa.Model):
             num_trucks (int): Number of trucks to create.
             width (int): Width of the grid.
             height (int): Height of the grid.
-            seed (int, optional): Random seed for reproducibility.
+            rng (int, optional): Random seed for reproducibility.
             critical_days_threshold (int): Days before death when critical.
         """
-        super().__init__(seed=seed)
+        super().__init__(rng=rng)
 
         self.num_beneficiaries = num_beneficiaries
         self.num_trucks = num_trucks

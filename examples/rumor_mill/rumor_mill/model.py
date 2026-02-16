@@ -17,7 +17,7 @@ class RumorMillModel(Model):
         know_rumor_ratio=0.01,
         rumor_spread_chance=0.5,
         eight_neightborhood=False,
-        seed=None,
+        rng=None,
     ):
         """
         Initialize the Rumor Mill model.
@@ -28,9 +28,9 @@ class RumorMillModel(Model):
             know_rumor_ratio: Initial proportion of agents who know the rumor (0.0-1.0)
             rumor_spread_chance: Probability of successful rumor transmission (0.0-1.0)
             eight_neightborhood: If True, use Moore (8-neighbor), else Von Neumann (4-neighbor)
-            seed: Random seed for reproducibility
+            rng: Random seed for reproducibility
         """
-        super().__init__(seed=seed)
+        super().__init__(rng=rng)
         self.number_of_agents = width * height
         self.know_rumor_ratio = know_rumor_ratio
         self.rumor_spread_chance = rumor_spread_chance

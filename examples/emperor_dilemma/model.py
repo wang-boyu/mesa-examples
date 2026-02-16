@@ -20,7 +20,7 @@ class EmperorModel(Model):
         fraction_true_believers=0.05,
         k=0.125,
         homophily=False,
-        seed=None,
+        rng=None,
     ):
         """Initializes the EmperorModel.
 
@@ -30,9 +30,9 @@ class EmperorModel(Model):
             fraction_true_believers (float): Fraction of true believers. Defaults to 0.05.
             k (float): Enforcement cost. Defaults to 0.125.
             homophily (bool): Whether to cluster believers. Defaults to False.
-            seed (int): Random seed. Defaults to None.
+            rng (int): Random seed. Defaults to None.
         """
-        super().__init__(seed=seed)
+        super().__init__(rng=rng)
 
         self.width = width
         self.height = height
